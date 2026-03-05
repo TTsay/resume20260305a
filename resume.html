@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王曉華 - 個人履歷</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+    transition: 0.3s;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+h1 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section h2 {
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+    color: #3498db;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Dark Mode */
+.dark {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+.dark .container {
+    background: #2c2c2c;
+}
+
+.dark h1 {
+    color: #4db8ff;
+}
+
+.dark .section h2 {
+    color: #4db8ff;
+    border-left: 5px solid #4db8ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="resume">
+    <header>
+        <h1>王曉華</h1>
+        <p>亞洲大學學生 | 學號：AU114001001</p>
+        <p>Email: your_email@example.com | 電話: 09xxxxxxxx</p>
+    </header>
+
+    <div class="section">
+        <h2>個人簡介</h2>
+        <p>
+            目前就讀亞洲大學，對未來有明確目標，希望能朝餐飲與咖啡相關產業發展。
+            個性認真負責，願意學習新技能，期望透過實務經驗提升自己。
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>學歷</h2>
+        <ul>
+            <li>亞洲大學（在學中）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>技能</h2>
+        <ul>
+            <li>基礎文書處理（Word / Excel）</li>
+            <li>HTML / CSS 基礎</li>
+            <li>基礎資料分析</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>未來目標</h2>
+        <p>
+            希望未來能成為專業廚師，並創立屬於自己的咖啡館。
+        </p>
+    </div>
+
+    <button onclick="toggleDarkMode()">切換深色模式</button>
+    <button onclick="downloadPDF()">下載 PDF</button>
+</div>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+
+function downloadPDF() {
+    window.print();
+}
+</script>
+
+</body>
+</html>
