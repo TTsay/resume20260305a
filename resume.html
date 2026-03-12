@@ -1,142 +1,187 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>蔡某某 - 個人履歷</title>
+<title>My Resume</title>
 
 <style>
-body {
+
+body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f6f9;
-    color: #333;
-    transition: 0.3s;
+    background:#f4f6f8;
+    margin:0;
+    padding:0;
 }
 
-.container {
-    width: 80%;
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-header {
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 15px;
+header{
+    text-align:center;
+    margin-bottom:30px;
 }
 
-h1 {
-    margin: 10px 0;
-    color: #2c3e50;
+.profile-photo{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #3498db;
+    margin-bottom:10px;
 }
 
-.section {
-    margin-top: 25px;
+h1{
+    margin:10px 0 5px 0;
 }
 
-.section h2 {
-    border-left: 5px solid #3498db;
-    padding-left: 10px;
-    color: #3498db;
+.subtitle{
+    color:gray;
 }
 
-ul {
-    padding-left: 20px;
+section{
+    margin-top:25px;
 }
 
-button {
-    padding: 10px 15px;
-    margin: 10px 5px 0 0;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background: #3498db;
-    color: white;
+.section-title{
+    font-size:20px;
+    border-bottom:2px solid #3498db;
+    padding-bottom:5px;
+    margin-bottom:10px;
 }
 
-button:hover {
-    background: #2980b9;
+ul{
+    padding-left:20px;
 }
 
-/* Dark Mode */
-.dark {
-    background: #1e1e1e;
-    color: #eee;
+.skill-bar{
+    background:#eee;
+    border-radius:5px;
+    overflow:hidden;
+    margin-bottom:10px;
 }
 
-.dark .container {
-    background: #2c2c2c;
+.skill-level{
+    height:10px;
+    background:#3498db;
 }
 
-.dark h1 {
-    color: #4db8ff;
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#3498db;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
 }
 
-.dark .section h2 {
-    color: #4db8ff;
-    border-left: 5px solid #4db8ff;
+button:hover{
+    background:#2c80b4;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="container" id="resume">
-    <header>
-        <h1>蔡某某</h1>
-        <p>亞洲大學學生 | 學號：AU114001001</p>
-        <p>Email: your_email@example.com | 電話: 09xxxxxxxx</p>
-    </header>
+<div class="container">
 
-    <div class="section">
-        <h2>個人簡介</h2>
-        <p>
-            目前就讀亞洲大學，對未來有明確目標，希望能朝餐飲與咖啡相關產業發展。
-            個性認真負責，願意學習新技能，期望透過實務經驗提升自己。
-        </p>
-    </div>
+<header>
 
-    <div class="section">
-        <h2>學歷</h2>
-        <ul>
-            <li>亞洲大學（在學中）</li>
-        </ul>
-    </div>
+<img src="images/photo.jpg" class="profile-photo">
 
-    <div class="section">
-        <h2>技能</h2>
-        <ul>
-            <li>基礎文書處理（Word / Excel）</li>
-            <li>HTML / CSS 基礎</li>
-            <li>基礎資料分析</li>
-        </ul>
-    </div>
+<h1>Roy Tsay</h1>
 
-    <div class="section">
-        <h2>未來目標</h2>
-        <p>
-            希望未來能成為專業廚師，並創立屬於自己的咖啡館。
-        </p>
-    </div>
-
-    <button onclick="toggleDarkMode()">切換深色模式</button>
-    <button onclick="downloadPDF()">下載 PDF</button>
+<div class="subtitle">
+Asia University Student<br>
+Student ID: AU114001001
 </div>
 
+</header>
+
+
+<section>
+
+<div class="section-title">About Me</div>
+
+<p>
+I am a first-year student at Asia University.  
+I am interested in business, data analysis, and entrepreneurship.  
+My goal is to open a coffee shop in the future.
+</p>
+
+</section>
+
+
+<section>
+
+<div class="section-title">Education</div>
+
+<ul>
+<li>Asia University — Bachelor Student</li>
+<li>Major: Information / Business Related Field</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<div class="section-title">Skills</div>
+
+<p>HTML</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:70%"></div>
+</div>
+
+<p>CSS</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:60%"></div>
+</div>
+
+<p>JavaScript</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:50%"></div>
+</div>
+
+<p>Data Analysis</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:65%"></div>
+</div>
+
+</section>
+
+
+<section>
+
+<div class="section-title">Contact</div>
+
+<ul>
+<li>Email: your_email@email.com</li>
+<li>GitHub: github.com/yourname</li>
+</ul>
+
+</section>
+
+
+<button onclick="showMessage()">Click Me</button>
+
+</div>
+
+
 <script>
-function toggleDarkMode() {
-    document.body.classList.toggle("dark");
+
+function showMessage(){
+    alert("Thank you for viewing my resume!");
 }
 
-function downloadPDF() {
-    window.print();
-}
 </script>
 
 </body>
