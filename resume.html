@@ -268,10 +268,6 @@ li.l4 {
 
         <div class="name"><strong>蔡存孝</strong></div>
 
-        <audio controls>
-  <source src="mp3/bg.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 
         <div class="objective">
 
@@ -380,6 +376,23 @@ Your browser does not support the audio element.
       </tr>
     </table>
   </div>
+<audio id="bgm" autoplay loop playsinline>
+  <source src="mp3/bg.mp3" type="audio/mpeg">
+</audio>
 
+<script>
+  const audio = document.getElementById("bgm");
+
+  // 嘗試直接播放
+  audio.play().catch(() => {
+    // 若被擋，快速解除靜音再播放
+    audio.muted = true;
+    audio.play();
+
+    setTimeout(() => {
+      audio.muted = false;
+    }, 100);
+  });
+</script>
 </body>
 </html>
